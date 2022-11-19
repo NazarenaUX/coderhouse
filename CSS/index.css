@@ -1,0 +1,70 @@
+
+/*ELIPSES+ICON+TEXT*/
+
+#propuestas{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.propuestas-contenedor {
+    width: 200px;
+    height: 200px;
+    left: 37px;
+    top: 800px;
+    border-radius: 50%;
+    border: 12px solid #F9C645;
+
+    
+}
+
+
+/* ICONOS DE PROPUESTA CONTENEDOR */
+
+.icono-propuestas{
+    height: 70px;
+}
+
+
+ 
+
+
+
+
+/*PRESENTACION EQUIPO*/
+
+.titulo-equipo{
+    text-align: center;
+}
+
+.nombre-equipo{
+    text-align: center;
+}
+
+.directivos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foto-integrante{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-integrante img{
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    justify-content: space-evenly;
+}
+
+.docentes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
