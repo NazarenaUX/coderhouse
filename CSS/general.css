@@ -1,248 +1,6 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-body,html{
-    width:100%;
-    overflow-x: hidden;
-}
-body{
-    min-height: 100vh;
-    position: relative;
-    background-color: #F8F8F8;
-}
-
-/*HEADER*/
-
-header {
-    background-color: #F9C645;
-    width: 100%;
-    height: 114px;
-    left: 0px;
-    top: 0px;
-}
-
-header ul li a {
-    text-decoration: none;
-    padding: 5px;
-}
-
-.menu ul li {
-    display: inline;
-    list-style: none;
-}
 
 
-.botones-header {
-    font-size: 15px;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 500;
-    color: #090c26;
-
-}
-
-.logo-header {
-    position: relative;
-    left: 50px;
-    top: 30px;
-    width: 100px;
-
-}
-
-/* MENU */
-.menu {
-    position: absolute;
-    right: 30px;
-}
-
-/* MAIN */
-
-main {
-    width: 1024px;
-    margin: 0px auto;
-    overflow-y: clip;
-    padding-bottom: 200px;
-}
-
-/*IMAGEN DE ABAJO DEL HEADER*/
-
-#foto-banner .foto-principal {
-    width: 100%;
-
-}
-
-/* CONTENEDOR DE LA FOTO ABAJO DEL HEADER */
-#foto-banner {  
-    width: 100%;
-    height: 80%;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.frase-banner {
-    position: absolute;
-    top: 35%;
-    width: 100%;
-    text-align: center;
-    color: #F8F8F8;
-}
-
-.foto-principal {
-    filter: brightness(50%);
-}
-
-/* BARRA PARA INDICAR SECCION */
-
-#barra-indicar-seccion {
-    background-color: #6A76E5;
-    width: 100%;
-    height: 20%;
-}
-
-#barra-indicar-seccion .nombre-seccion {
-    position: relative;
-    left: 3%;
-    top: 30%;
-}
-
-
-/*FOOTER*/
-
-footer {
-    margin-top: 30px;
-    background-color: #F9C645;
-    text-decoration: none;
-    width: 100%;
-    height: 114px;
-    bottom: 0%;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-}
-
-.titulo-footer {
-    text-align: center;
-    width: 100%;
-
-}
-
-/* CONTENEDOR DE LA LISTA DE CONTACTOS */
-.datos-contacto {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-/* LISTA DE CONTACTOS */
-.contactos {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 10px;
-}
-
-.icono-footer {
-    position: absolute;
-    width: 100px;
-    top: 25%;
-    left: 50px;
-
-}
-
-/* -----------modelo pareaja icono-texto -------- */
-/*  CONTENEDOR DE PAREJA ICONO-TEXTO */
-.contenedor-icono-texto {
-    display: flex;
-    flex-direction: column;
-}
-
-/* MITADES CONTENEDOR DE PAREJA ICONO-TEXTO */
-.contenedor-icono-texto div {
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 0px 10%;
-}
-
-/* IMAGEN DE PAREJA ICONO-TEXTO */
-.contenedor-icono-texto img {
-    align-self: flex-end;
-}
-
-/* TEXTO DE PAREJA ICONO-TEXTO */
-.contenedor-icono-texto h6 {
-    text-align: center;
-}
-
-/* --------Fin modelo pareja----- */
-
-/*IMAGEN ELIPSE-DERECHA-ARRIBA*/
-
-#foto-lateral-elipse {
-    border-radius: 50%;
-    width: 30%;
-
-    overflow: hidden;
-    box-shadow: -8px 9px 20px rgba(0, 0, 0, 0.25);
-}
-
-aside>img {
-    width: 100%;
-    height: 100%;
-}
-
-
-/*TEXTO INICIAL DE CADA PÁGINA*/
-
-#presentacion-seccion {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    min-height: 400px;
-    gap: 30px;
-    padding: 100px 25% 0 3%;
-
-}
-/* CONTENEDOR DE LA FOTO DE MAIN */
-#presentacion-seccion>.main-photo {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    right: -120px;
-    top: -100px;
-    border-radius: 50%;
-    box-shadow: -8px 9px 20px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-    display: flex;
-    
-
-}
-/* FOTO DE MAIN */
-.main-photo>img{
-
-}
-
-.main-header h2 {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 800;
-    color: #6A76E5;
-}
-
-.main-paragraph p {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-}
-
+/* -----------------------inicio generales a todas las paginas----------- */
 /*TIPOGRAFIA*/
 
 h1 {
@@ -291,19 +49,298 @@ p {
     font-weight: 500;
     color: #000;
 }
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 
-/* BANNER */
+.body-grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 
+                        114px
+                        300px
+                        auto
+                        114px;
+    grid-template-areas: 
+                "header"
+                "banner"
+                "main"
+                "footer";
+    overflow-x: hidden;
+    background-color: #F8F8F8;
+}
 
-.banner {
+.header{
+    grid-area: header;
+    background-color: #F9C645;
+    display: grid;
+    grid-template-columns: auto 500px ;
+}
+.logo-header{
+    display: flex;
+    align-items: center;
+    padding-left: 3vw;
+}
+.header>nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3vw;
+}
+
+.navbar-list{
+
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+.navbar-list *{
+    list-style: none;
+}
+
+.banner{
+    grid-area: banner;
+    background-color: goldenrod;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    grid-template-columns: auto;
+}
+.foto-banner {  
     width: 100%;
-    height: 300px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.foto-principal {
+    filter: brightness(50%);
+    object-fit: cover;
+}
+
+.frase-banner{
+    font-size: 60px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    color: #F8F8F8;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #F8F8F8;
+}
+.barra-indicar-seccion {
+    background-color: #6A76E5;
+}
+
+.barra-indicar-seccion .nombre-seccion {
+    position: relative;
+    left: 3%;
+    top: 30%;
 }
 
 
+.main{
+    grid-area: main;
+    max-width: 1200px;
+    justify-self: center;
+    margin: 0% 5%;
 
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 350px auto;
+    grid-template-areas: "presentacion foto"
+                        "contenido contenido";
+    position:relative;
+    overflow-y: clip;
+}
+.presentacion-seccion{
+    grid-area: presentacion;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 50px;
+}
+.main-photo{
+    grid-area:foto;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: -80px;
+    top: -100px;
+    border-radius: 50%;
+    box-shadow: -8px 9px 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    display: flex;
+}
+.presentacion-proyectos{
+    grid-area:contenido;
+}
+
+/*FOOTER*/
+.footer{
+    display: relative;
+    grid-area: footer;
+    background-color: #F9C645;
+    display: grid;
+    grid-template-areas: "logo header" 
+                        "logo iconos";
+    grid-template-rows: 30% 70%;
+    grid-template-columns:  0% auto;
+}
+
+.titulo-footer {
+    grid-area: header;
+    text-align: center;
+    width: 100%;
+
+}
+
+/* CONTENEDOR DE LA LISTA DE CONTACTOS */
+.datos-contacto {
+    grid-area: iconos;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* LISTA DE CONTACTOS */
+.contactos {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+.icono-footer {
+    display: absolute;
+    grid-area: logo;
+    width: 200px;
+    display: grid;
+    align-items: center;
+    padding-left: 3vw;
+}
+
+/* -----------modelo pareaja icono-texto -------- */
+/*  CONTENEDOR DE PAREJA ICONO-TEXTO */
+.contenedor-icono-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MITADES CONTENEDOR DE PAREJA ICONO-TEXTO */
+.contenedor-icono-texto div {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 0px 10%;
+}
+
+/* IMAGEN DE PAREJA ICONO-TEXTO */
+.contenedor-icono-texto img {
+    align-self: flex-end;
+}
+
+/* TEXTO DE PAREJA ICONO-TEXTO */
+.contenedor-icono-texto h6 {
+    text-align: center;
+}
+
+/* --------Fin modelo pareja----- */
+
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
 .boton-estilo {
     background-color: #F9C645;
     border-radius: 7px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
 }
+
+/* -----------------------fin generales a todas las paginas----------- */
+
+
+
+
+/* -------------------inicio proyectos activos ----------------- */
+
+/* ---------------lista de tarjetas proyectos---------- */
+.lista-proyectos{
+    margin: 50px 0px;
+    display: flex;
+    gap: 200px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* ------------tarjetas------------- */
+
+.tarjeta-proyecto{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.tarjeta-proyecto img{
+    height: 300px;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: -8px 9px 20px rgb(0 0 0 / 25%);
+    /* por definirle un ancho y alto irregular las estaba estirando 
+    asi que lo resuelvo con  */
+    object-fit: cover;
+}
+.tarjeta-proyecto button{
+    width: 360px;
+    height: 35px;
+}
+.tarjeta-proyecto .mas-info{
+    width: 300px;
+    height: 300px;
+    background-color: #6A76E5;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* -------------------fin proyectos activos ----------------- */
+
+@media screen and (max-width: 576px) {
+
+    .header{
+        grid-template-rows: auto auto;
+        grid-template-columns: auto ;
+        justify-content: center;
+    }
+    .logo-header{
+        justify-content: center;
+    }
+
+    .main{
+
+        margin: 0% 0%;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "presentacion" 
+                            "foto"
+                            "contenido";
+        gap: 30px;
+        justify-content: center;
+        padding: 0px 3vw;
+
+    }
+    .main-photo{
+        position: static;
+        justify-self: center;
+    }
+  }

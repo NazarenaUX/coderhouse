@@ -1,11 +1,11 @@
-#contenedor-mapa{
+.contenedor-mapa{
     height: 400px;
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-#contenedor-mapa iframe{
+.contenedor-mapa iframe{
     height: 100%;
     width: 45%;
 }

@@ -36,3 +36,42 @@
     align-items: center;
     border-radius: 50%;
 }
+
+.grid-container-proyectos{
+    display: grid;
+    grid-template-areas: 
+                "header"
+                "banner"
+                "principal"
+                "proyectos"
+                "proyectos"
+                "footer"
+}
+/* .grid-container-proyectos{
+    display: grid;
+    grid-template-areas: 
+                "header"
+                "banner"
+                "principal"
+                "proyectos"
+                "proyectos"
+                "proyectos"
+                "proyectos"
+                "footer footer";
+} */
+
+.proyectos-grid-item-1{
+    grid-area: principal;
+}
+.proyectos-grid-item-2{
+    grid-area: proyectos;
+}
+.header{
+    grid-area:header;
+}
+.banner{
+    grid-area:banner;
+}
+.footer{
+    grid-area: footer;
+}

@@ -13,14 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body-grid-container">
 
-    <header id="header">
+    <header class="header">
         <div class="logo-header">
             <img src="./Imagenes/logo sin fondo.png" alt="logo de tutorias siglo XXI">
         </div>
-        <nav class="menu">
-            <ul>
+        <nav>
+            <ul class="navbar-list">
                 <li><a class="botones-header" href="./index.html">Home</a></li>
                 <li><a class="botones-header" href="./proyectos-activos.html">Proyectos activos</a></li>
                 <li><a class="botones-header" href="./donaciones.html">Donaciones</a></li>
@@ -34,20 +34,20 @@
 
     <div class="banner">
 
-        <div id="foto-banner">
+        <div class="foto-banner">
             <img class="foto-principal" src="./Imagenes/nenes-1.png" alt="foto de niños teniendo clases">
-            <h1 class="frase-banner">Educación para la libertad</h1>
+            <p class="frase-banner">Educación para la libertad</p>
         </div>
 
-        <div id="barra-indicar-seccion">
+        <div class="barra-indicar-seccion">
             <h4 class="nombre-seccion">Home</h4>
         </div>
     </div>
 
 
 
-    <main>
-        <section id="presentacion-seccion">
+    <main class="main">
+        <section class="presentacion-seccion">
             <div class="main-header">
                 <h2>Quiénes somos</h2>
             </div>
@@ -63,17 +63,17 @@
 
 
 
-        <section id="formulario-container">
+        <section class="formulario-container">
 
             <div>
                 <h2>Contanos sobre vos</h2>
             </div>
             <form class="formulario-cv" action="recibir-cv">
                 <div class="datos-personales">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" required>
-                    <input type="number" name="dni" id="dni" placeholder="DNI" required>
-                    <input type="tel" name="telefono" id="telefono" placeholder="Telefono" required>
-                    <input type="email" name="mail" id="mail" placeholder="Mail" required>
+                    <input type="text" name="nombre" class="nombre" placeholder="Nombre completo" required>
+                    <input type="number" name="dni" class="dni" placeholder="DNI" required>
+                    <input type="tel" name="telefono" class="telefono" placeholder="Telefono" required>
+                    <input type="email" name="mail" class="mail" placeholder="Mail" required>
                 </div>
 
                 <div class="tit-check">
@@ -81,15 +81,15 @@
                         <p>Quiero colaborar en:</p>
                     </div>
                     <div class="option">
-                        <input type="checkbox" name="docencia" id="docencia">
+                        <input type="checkbox" name="docencia" class="docencia">
                         <label for="docencia">Docencia</label>
                     </div>
                     <div class="option">
-                        <input type="checkbox" name="talleres" id="talleres">
+                        <input type="checkbox" name="talleres" class="talleres">
                         <label for="talleres">Talleres</label>
                     </div>
                     <div class="option">
-                        <input type="checkbox" name="difusion" id="difusion">
+                        <input type="checkbox" name="difusion" class="difusion">
                         <label for="difusion">Difusion</label>
                     </div>
 
@@ -99,7 +99,7 @@
 
                     <p>Compartinos tu CV y/o propuesta de taller: </p>
                     
-                    <input type="file" name="boton-archivo" id="boton-archivo" hidden/>
+                    <input type="file" name="boton-archivo" class="boton-archivo" hidden/>
                     <label  class="label-archivo" for="boton-archivo">
                         <div class="label-archivo-contenido boton-estilo">
                             <h4>Subir archivo</h4>
@@ -114,7 +114,7 @@
                     <p>En breve nos vamos a comunicar con vos para brindarte una respuesta.</p>
                 </div>
 
-                <div id="boton-enviar">
+                <div class="boton-enviar">
                     <button class="boton-estilo submit" type="submit " >Enviar</button>
                 </div>
                 
@@ -125,7 +125,7 @@
     </main>
     
 
-    <footer id="footer">
+    <footer class="footer">
 
         <div class="titulo-footer">
             <h4>¡Contactanos!</h4>

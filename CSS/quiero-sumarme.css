@@ -1,4 +1,4 @@
-#presentacion-seccion>.main-photo {
+.presentacion-seccion>.main-photo {
     justify-content: center;
 }
 
@@ -96,7 +96,7 @@
 }
 
 /* CONTENEDOR DEL BOTON DE SUBMIT */
-#boton-enviar{
+.boton-enviar{
     width: 260px;
     position: absolute;
     bottom: 25px;

@@ -1,6 +1,6 @@
 /*ELIPSES+ICON+TEXT*/
 
-#propuestas-contenedor {
+.propuestas-contenedor {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -69,10 +69,10 @@
     flex-wrap: wrap;
 }
 
-#presentacion-seccion>.main-photo {
+.presentacion-seccion>.main-photo {
     justify-content: center;
 }
 
-#presentacion-equipo{
+.presentacion-equipo{
     margin-top: 50px;
 }
