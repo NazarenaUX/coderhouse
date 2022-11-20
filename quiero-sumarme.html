@@ -45,67 +45,83 @@
     </div>
 
 
+
     <main>
         <section id="presentacion-seccion">
-            <section class="texto-inicial">
+            <div class="main-header">
                 <h2>Quiénes somos</h2>
-                <div>
-                    <br>
-                </div>
+            </div>
+            <div class="main-paragraph">
                 <p>Tutorias Siglo XXI es una asociación civil sin fines de lucro formada por docentes y voluntarios
                     unidos
                     desde 2018 por el deseo de una educación inclusiva, esperanzadora y colectiva.</p>
-
-            </section>
-
-
-
-            <Aside id="foto-lateral-elipse">
-                <img src="https://palabrasclaras.mx/wp-content/uploads/2018/04/EDUCACION-INDIGENA-ESCUELA-1068x712.jpg"
-                    alt="docente ayudando a un alumno">
-            </Aside>
+            </div>
+            <div class="main-photo">
+                <img src="https://palabrasclaras.mx/wp-content/uploads/2018/04/EDUCACION-INDIGENA-ESCUELA-1068x712.jpg" alt="">
+            </div>
         </section>
-    
-            <section id="formulario-cv">
-                <div>
-                    <h3>Contanos sobre vos</h3>
+
+
+
+        <section id="formulario-container">
+
+            <div>
+                <h2>Contanos sobre vos</h2>
+            </div>
+            <form class="formulario-cv" action="recibir-cv">
+                <div class="datos-personales">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" required>
+                    <input type="number" name="dni" id="dni" placeholder="DNI" required>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Telefono" required>
+                    <input type="email" name="mail" id="mail" placeholder="Mail" required>
                 </div>
-                <form action="recibir-cv">
-                    <input type="Nombre completo">
-                    <input type="DNI">
-                    <input type="Telefono">
-                    <input type="Mail">
-    
-                    <div class="tit-check">
+
+                <div class="tit-check">
+                    <div class="section-header">
                         <p>Quiero colaborar en:</p>
-                        <input type="checkbox" name="Docencia" id="checkbox">
-                        <input type="checkbox" name="Talleres" id="checkbox">
-                        <input type="checkbox" name="Difusión" id="checkbox">
                     </div>
-    
-                    <div class="agregar-archivo">
-                        <p>Compartinos tu CV y/o propuesta de taller: </p>
-    
-                        <div class="boton-archivo">
-                            <p>Subir archivo</p>
+                    <div class="option">
+                        <input type="checkbox" name="docencia" id="docencia">
+                        <label for="docencia">Docencia</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="talleres" id="talleres">
+                        <label for="talleres">Talleres</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="difusion" id="difusion">
+                        <label for="difusion">Difusion</label>
+                    </div>
+
+                </div>
+
+                <div class="agregar-archivo">
+
+                    <p>Compartinos tu CV y/o propuesta de taller: </p>
+                    
+                    <input type="file" name="boton-archivo" id="boton-archivo" hidden/>
+                    <label  class="label-archivo" for="boton-archivo">
+                        <div class="label-archivo-contenido boton-estilo">
+                            <h4>Subir archivo</h4>
                             <img src="./Imagenes/icon-descargar.png" alt="subir archivo">
                         </div>
-    
-                    </div>
-    
-                    <p>En breve nos vamos a comunicar con vos para brindarte una respuesta.</p>
-    
-                    <div id="boton-enviar">
-                        <p>Enviar</p>
-                    </div>
-    
-    
-                </form>
-            </section>
+                    </label>
 
-        <div class="frame">
-            <button class="boton-enviar"> enviar </button>
-        </div>
+                </div>
+
+                <div class="form-info">
+
+                    <p>En breve nos vamos a comunicar con vos para brindarte una respuesta.</p>
+                </div>
+
+                <div id="boton-enviar">
+                    <button class="boton-estilo submit" type="submit " >Enviar</button>
+                </div>
+                
+            </form>
+        </section>
+
+
     </main>
     
 

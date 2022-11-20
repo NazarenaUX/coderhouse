@@ -3,6 +3,15 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body,html{
+    width:100%;
+    overflow-x: hidden;
+}
+body{
+    min-height: 100vh;
+    position: relative;
+    background-color: #F8F8F8;
+}
 
 /*HEADER*/
 
@@ -52,6 +61,8 @@ header ul li a {
 main {
     width: 1024px;
     margin: 0px auto;
+    overflow-y: clip;
+    padding-bottom: 200px;
 }
 
 /*IMAGEN DE ABAJO DEL HEADER*/
@@ -62,11 +73,14 @@ main {
 }
 
 /* CONTENEDOR DE LA FOTO ABAJO DEL HEADER */
-#foto-banner {
+#foto-banner {  
     width: 100%;
     height: 80%;
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -100,6 +114,7 @@ main {
 /*FOOTER*/
 
 footer {
+    margin-top: 30px;
     background-color: #F9C645;
     text-decoration: none;
     width: 100%;
@@ -107,7 +122,7 @@ footer {
     bottom: 0%;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
+    position: absolute;
 }
 
 .titulo-footer {
@@ -117,7 +132,7 @@ footer {
 }
 
 /* CONTENEDOR DE LA LISTA DE CONTACTOS */
-.datos-contacto{
+.datos-contacto {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -127,7 +142,7 @@ footer {
 .contactos {
     display: flex;
     flex-direction: row;
-    list-style:none;
+    list-style: none;
     gap: 10px;
 }
 
@@ -141,12 +156,13 @@ footer {
 
 /* -----------modelo pareaja icono-texto -------- */
 /*  CONTENEDOR DE PAREJA ICONO-TEXTO */
-.contenedor-icono-texto{
+.contenedor-icono-texto {
     display: flex;
     flex-direction: column;
 }
+
 /* MITADES CONTENEDOR DE PAREJA ICONO-TEXTO */
-.contenedor-icono-texto div{
+.contenedor-icono-texto div {
     height: 50%;
     display: flex;
     justify-content: center;
@@ -154,13 +170,15 @@ footer {
 }
 
 /* IMAGEN DE PAREJA ICONO-TEXTO */
-.contenedor-icono-texto img{
+.contenedor-icono-texto img {
     align-self: flex-end;
 }
+
 /* TEXTO DE PAREJA ICONO-TEXTO */
-.contenedor-icono-texto h6{
+.contenedor-icono-texto h6 {
     text-align: center;
 }
+
 /* --------Fin modelo pareja----- */
 
 /*IMAGEN ELIPSE-DERECHA-ARRIBA*/
@@ -182,14 +200,48 @@ aside>img {
 /*TEXTO INICIAL DE CADA PÁGINA*/
 
 #presentacion-seccion {
+    position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 400px;
+    gap: 30px;
+    padding: 100px 25% 0 3%;
+
+}
+/* CONTENEDOR DE LA FOTO DE MAIN */
+#presentacion-seccion>.main-photo {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: -120px;
+    top: -100px;
+    border-radius: 50%;
+    box-shadow: -8px 9px 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    display: flex;
+    
+
+}
+/* FOTO DE MAIN */
+.main-photo>img{
+
 }
 
-.texto-inicial {
-    width: 70%;
+.main-header h2 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    color: #6A76E5;
 }
 
+.main-paragraph p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
 
 /*TIPOGRAFIA*/
 
@@ -218,14 +270,12 @@ h4 {
     font-size: 20px;
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
-    color: #F8F8F8;
 }
 
 h5 {
     font-size: 15px;
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
-    color: #F8F8F8;
 }
 
 h6 {
@@ -249,19 +299,11 @@ p {
     height: 300px;
 }
 
-.frame{
-    background-color: #6A76E5;
-    position: relative;
-    width: 1300px;
-    height: 773px;
-}
 
-.boton-enviar{
+
+.boton-estilo {
     background-color: #F9C645;
-    position: absolute;
-    width: 344px;
-    height: 92px;
-    left: 902px;
-    top: 625px;
-
+    border-radius: 7px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
 }

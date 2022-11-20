@@ -1,13 +1,13 @@
-
 /*ELIPSES+ICON+TEXT*/
 
-#propuestas{
+#propuestas-contenedor {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
 
 }
 
-.propuestas-contenedor {
+.propuestas {
     width: 200px;
     height: 200px;
     left: 37px;
@@ -15,56 +15,64 @@
     border-radius: 50%;
     border: 12px solid #F9C645;
 
-    
+
 }
 
 
 /* ICONOS DE PROPUESTA CONTENEDOR */
 
-.icono-propuestas{
+.icono-propuestas {
     height: 70px;
 }
 
 
- 
+
 
 
 
 
 /*PRESENTACION EQUIPO*/
 
-.titulo-equipo{
+.titulo-equipo {
     text-align: center;
 }
 
-.nombre-equipo{
+.nombre-equipo {
     text-align: center;
 }
 
-.directivos{
+.directivos {
     display: flex;
     justify-content: space-evenly;
 }
 
-.foto-integrante{
+.foto-integrante {
     height: 200px;
     width: 200px;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.foto-integrante img{
+.foto-integrante img {
     height: 50%;
     width: 50%;
     border-radius: 50%;
-    justify-content: space-evenly;
+    object-fit: cover;
 }
 
-.docentes{
+.docentes {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
+#presentacion-seccion>.main-photo {
+    justify-content: center;
+}
 
+#presentacion-equipo{
+    margin-top: 50px;
+}

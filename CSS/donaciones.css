@@ -1,0 +1,81 @@
+main *{
+    font-family: 'Manrope';
+}
+
+/* INFO SOBRE DONACIONES */
+#info-donaciones{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -200px;
+}
+
+.objetivos-donaciones{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 650px;
+}
+.objetivos-donaciones.variante-a{
+    border: solid 5px #F9C645;
+}
+.objetivos-donaciones.variante-b{
+    border: solid 5px #6A76E5;
+}
+.objetivos-donaciones *{
+    margin: 0px 20px;
+}
+
+
+/* BOTONERA DONAR */
+
+#botonera-donar{
+    position: relative;
+    width: 100%;
+    margin: 90px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+#foto-lateral-elipse{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    left: -150px;
+    top: 90px;
+}
+#botonera-info{
+    align-self: center;
+    width: 65%;
+    text-align: center;
+
+}
+#donaciones-lista{
+    width: 70%;
+    align-self: flex-end;
+    list-style: none;
+    
+}
+#donaciones-lista *{
+    margin: 20px 0;
+}
+
+#donaciones-lista p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#donaciones-lista button{
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+
+    font-weight: 500;
+    border: none;
+}
+
+.donacion-unica .boton-estilo{
+    background-color: #6A76E5;
+}
