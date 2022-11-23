@@ -53,12 +53,10 @@ p {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 
-                        114px
                         300px
                         auto
                         114px;
     grid-template-areas: 
-                "header"
                 "banner"
                 "main"
                 "footer";
@@ -83,6 +81,12 @@ p {
     justify-content: flex-end;
     padding-right: 3vw;
 }
+
+.navbar{
+    background-color: #F9C645;
+}
+
+.navbar-expand{-sm|-md|-lg|-xl|-xxl}
 
 .navbar-list{
 
