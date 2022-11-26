@@ -17,8 +17,8 @@
 </head>
 
 <body class="container-fluid">
-    <div class="row">
-        <div class="col g-0">
+    <div class="row navbar">
+        <div class="col">
             <nav class="navbar navbar-expand-lg navbar-background-color: #F9C645;">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="./index.html">
@@ -54,42 +54,55 @@
         </div>
     </div>
     <div class="row">
-        <div class="col g-0 foto-banner">
-            <img class="foto-principal" src="./Imagenes/nenes-1.png" alt="foto de niños teniendo clases">
-            <p class="frase-banner">Educación para la libertad</p>
+        <div class="col g-0">
+            <div class="foto-banner">
+                <img class="foto-principal" src="./Imagenes/nenes-1.png" alt="foto de niños teniendo clases">
+                <p class="frase-banner">Educación para la libertad</p>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col barra-indicar-seccion">
-            <h4>Home</h4>
+    <div class="row barra-indicar-seccion">
+        <div class="col">
+            <div class="nombre-seccion">
+                <h4>Home</h4>
+            </div>
         </div>
     </div>
 
     <div class="container-md">
         <div class="row">
-            <div class="col-9 presentacion-seccion">
-                <h2>Quiénes somos</h2>
-                <p>Tutorias Siglo XXI es una asociación civil sin fines de lucro formada por docentes y voluntarios
-                    unidos desde 2018 por el deseo de una educación inclusiva, esperanzadora y colectiva.</p>
-                <section class="container-md propuestas-contenedor">
-                    <section class="row gx-6">
-                        <div class="col-6 col-md-4 propuesta">
+            <div class="col-9">
+                <section class="presentacion-seccion">
+                    <div class="main-header">
+                        <h2>Quiénes somos</h2>
+                    </div>
+                    <div class="main-paragraph">
+                        <p>Tutorias Siglo XXI es una asociación civil sin fines de lucro formada por docentes y
+                            voluntarios
+                            unidos
+                            desde 2018 por el deseo de una educación inclusiva, esperanzadora y colectiva.</p>
+                    </div>
+                    <section class="propuestas-contenedor">
+                        <div class="propuesta">
                             <div>
                                 <img class="icono-propuestas" src="./Imagenes/icono-brindamos.png" alt="lapiz">
                             </div>
-                            <h6 class="descripcion-propuestas">Brindamos apoyo escolar a personas en en situacion de
-                                vulnerabilidad</h6>
+                            <div>
+                                <h6 class="descripcion-propuestas">Brindamos apoyo escolar a personas en en situacion de
+                                    vulnerabilidad</h6>
+                            </div>
                         </div>
-                        <div class="col-6 col-md-4 propuestas-azul propuesta">
+                        <div class="propuestas-azul propuesta">
                             <div>
                                 <img class="icono-propuestas" src="./Imagenes/icono-investigamos.png" alt="estudiante">
                             </div>
-
-                            <h6 class="descripcion-propuestas">Investigamos y difundimos experiencias educativas en
-                                diversos
-                                ambitos academicos</h6>
+                            <div>
+                                <h6 class="descripcion-propuestas">Investigamos y difundimos experiencias educativas en
+                                    diversos
+                                    ambitos academicos</h6>
+                            </div>
                         </div>
-                        <div class="col-6 col-md-4 propuesta">
+                        <div class="propuesta">
                             <div>
                                 <img class="icono-propuestas" src="./Imagenes/icono-organizamos.png"
                                     alt="manos y un corazon">
@@ -101,7 +114,6 @@
                             </div>
                         </div>
                     </section>
-                </section>
                 </section>
             </div>
             <div class="col-3">
@@ -181,63 +193,51 @@
     </div>
 
 
-        <div class="container-fluid"> 
-            <div class="row footer">
-                <div class="col-2">
-                        <div class="icono-footer">
-                            <img src="./Imagenes/logo sin fondo.png" alt="logo de Asociacion Siglo XXI">
-                        </div>
-                    </div>
-                <div class="col-10">
-                            <div class="titulo-footer">
-                                <h4>¡Contactanos!</h4>
+<div class="container-fluid">
+        <div class="row footer">
+            <div class="col-2 icono-footer">
+                <div class="icono-footer">
+                    <img class="logo-asociacion" src="./Imagenes/logo sin fondo.png" alt="logo de Asociacion Siglo XXI">
+            </div>
+            <div class="col-10">
+                <div class="titulo-footer">
+                    <h4>¡Contactanos!</h4>
+                </div>
+                <div class="datos-contacto">
+                    <ul class="contactos">
+                        <li class="contenedor-icono-texto">
+                            <div>
+                                <img src="./Imagenes/icono-instagram.png" alt="instagram">
                             </div>
-                            <div class="datos-contacto">
-                                <ul class="contactos">
-                                    <li class="contenedor-icono-texto">
-                                        <div>
-                                            <img src="./Imagenes/icono-instagram.png" alt="instagram">
-                                        </div>
-                                        <div>
-                                            <h6>tutoriasigloxxi</h6>
-                                        </div>
-                                    </li>
-                                    <li class="contenedor-icono-texto">
-                                        <div>
-                                            <img src="./Imagenes/icono-mail.png" alt="mail">
-                                        </div>
-                                        <div>
-                                            <h6>tutorias.sigloxxi@gmail.com</h6>
-                                        </div>
-                                    </li>
-                                    <li class="contenedor-icono-texto">
-                                        <div>
-                                            <img src="./Imagenes/icono-facebook.png" alt="facebook">
-                                        </div>
-                                        <div>
-                                            <h6>Tutorias Siglo XXI</h6>
-                                        </div>
-                                    </li>
-                                </ul>
+                            <div>
+                                <h6>tutoriasigloxxi</h6>
                             </div>
-                        </div>
-
-                    </div>
-                    
-                
+                        </li>
+                        <li class="contenedor-icono-texto">
+                            <div>
+                                <img src="./Imagenes/icono-mail.png" alt="mail">
+                            </div>
+                            <div>
+                                <h6>tutorias.sigloxxi@gmail.com</h6>
+                            </div>
+                        </li>
+                        <li class="contenedor-icono-texto">
+                            <div>
+                                <img src="./Imagenes/icono-facebook.png" alt="facebook">
+                            </div>
+                            <div>
+                                <h6>Tutorias Siglo XXI</h6>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     
 
-        </div>
-
-       
-
-
-
-
-        <script> src = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity = "sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin = "anonymous"
-        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,5 +1,40 @@
 /*ELIPSES+ICON+TEXT*/
 
+.propuestas-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.propuestas {
+    width: 250px;
+    height: 250px;
+    left: 37px;
+    top: 800px;
+    border-radius: 50%;
+    border: 12px solid #F9C645;
+}
+
+
+.propuestas-azul{
+    border: 12px solid #6A76E5;
+}
+
+
+.descripcion-propuestas{
+    justify-content: center;
+    padding: 10px;
+    font-size: small;
+
+}
+
+
+/* ICONOS DE PROPUESTA CONTENEDOR */
+
+.icono-propuestas {
+    height: 70px;
+}
 
 
 
