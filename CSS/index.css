@@ -153,8 +153,8 @@ body *{
 }
 /*  CONTENEDOR DE PAREJA ICONO-TEXTO */
 .propuesta {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     display: flex;
     flex-direction: column;
     border-radius: 50%;
