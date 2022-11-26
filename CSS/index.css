@@ -1,27 +1,191 @@
-/*ELIPSES+ICON+TEXT*/
-
-
-
-
-
-
-
-
-/*PRESENTACION EQUIPO*/
-
-.titulo-equipo {
-    text-align: center;
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #F8F8F8;
 }
 
-.nombre-equipo {
-    text-align: center;
+h2 {
+    font-size: 35px;
+    font-weight: 800;
+    color: #090c26;
 }
 
-.directivos {
+h3 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #090c26;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #F8F8F8;
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 10px;
+    font-weight: 400;
+    color: #090c26;
+   text-align: center;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+body *{
+    font-family: 'Manrope', sans-serif;
+    
+}
+.row-main{
+    background-color: #7b757519;
+    
+}
+
+
+
+.navbar{
+    background-color: #F9C645;
+}
+
+
+/* banner */
+
+
+.row-banner{
+    height: 300px;
+    overflow: hidden;
+}
+.col-banner{
+    height: 100%;
+    position: relative;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
 }
 
+.col-banner p{
+    position: absolute;
+    align-self: center;
+    font-size: 60px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    color: #F8F8F8;
+}
+
+
+.col-banner img{
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+/* nombre-pagina */
+
+.row-nombre-pagina{
+    background-color: #6A76E5;
+    height: 80px;
+}
+
+.col-nombre-pagina{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+}
+
+/* imagen aside */
+
+.col-image-aside{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.col-image-aside img{
+    height: 100%;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.container-main>.row{
+    justify-content: center;
+}
+
+
+
+/* -------Index------ */
+/* -----------modelo pareaja icono-texto -------- */
+.row-propuestas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+/*  CONTENEDOR DE PAREJA ICONO-TEXTO */
+.propuesta {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    /* left: 37px;
+    top: 800px; */
+    border-radius: 50%;
+    border: 9px solid #F9C645;
+    
+}
+
+/* MITADES CONTENEDOR DE PAREJA ICONO-TEXTO */
+.propuesta div {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 0px 10%;
+}
+
+/* IMAGEN DE PAREJA ICONO-TEXTO */
+.icono-propuestas {
+    align-self: flex-end;
+    height: 70px;
+}
+
+
+/* TEXTO DE PAREJA ICONO-TEXTO */
+.descripcion-propuestas{
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+
+}
+.propuestas-azul{
+    border: 9px solid #6A76E5;
+}
+
+/* --------Fin modelo pareja----- */
+
+
+
+/* integrantes */
+.presentacion-equipo{
+    padding-top:  30px;
+}
 .foto-integrante {
     height: 300px;
     width: 300px;
@@ -30,6 +194,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
     
 }
 
@@ -41,16 +206,142 @@
     box-shadow: -8px 9px 20px rgba(0, 0, 0, 0.25);
 }
 
-.docentes {
+.directivos,.docentes{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.presentacion-seccion>.main-photo {
+
+
+/* ----------Index------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.row-footer{
+    display: relative;
+    background-color: #F9C645;
+
+}
+.row-footer ul{
+    padding:0px;
+}
+
+.titulo-footer {
+    /* grid-area: header; */
+    text-align: center;
+    width: 100%;
+
+}
+
+/* CONTENEDOR DE LA LISTA DE CONTACTOS */
+.datos-contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+/* LISTA DE CONTACTOS */
+.contactos {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+.row-footer>.col-icono {
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.presentacion-equipo{
-    margin-top: 50px;
+
+/* -----------modelo pareaja icono-texto -------- */
+/*  CONTENEDOR DE PAREJA ICONO-TEXTO */
+.contenedor-icono-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MITADES CONTENEDOR DE PAREJA ICONO-TEXTO */
+.contenedor-icono-texto div {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 0px 10%;
+}
+
+/* IMAGEN DE PAREJA ICONO-TEXTO */
+.contenedor-icono-texto img {
+    align-self: flex-end;
+}
+
+/* TEXTO DE PAREJA ICONO-TEXTO */
+.contenedor-icono-texto h6 {
+    text-align: center;
+}
+
+/* --------Fin modelo pareja----- */
+
+
+
+/* pagina proyectos */
+.presentacion-proyectos img{
+    width: 300px;
+    height: 200px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    /* BANNER */
+    .row-banner{
+        height: auto;
+    }
+    
+    .col-banner p{
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+
+    .col-image-aside{
+        margin-top: 30px;
+        height: 200px;
+        width: 100vw !important;
+
+    }
+    .col-image-aside>img{
+        border-radius: 0%;
+        width: 100%;
+    }
+
+
+    /* index */
+
+    .foto-integrante img{
+        width: 100%;
+        height: 100%;
+    }
+
 }
