@@ -1,0 +1,150 @@
+.footer {
+    background-color: $colorPrincipal;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    padding: 3rem 1rem;
+  
+    &__container {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__col {
+        min-width: 300px;
+        color: $colorFondo;
+        font-family: $fuenteUnica;
+        padding: 0rem;
+    }
+
+    &__col p{
+        width: 80%;
+    }
+
+    &__col h3 {
+        color: $colorTitulos;
+        margin-bottom: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__col &__logo {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    &__col h3::after {
+        content: '';
+        height: 3px;
+        width: 30px;
+        background-color: $colorTitulos;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s ease;
+    }
+
+    &__col h3:hover::after {
+        width: 100px;
+    }
+
+    &__col &__redes a{
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        justify-content: space-between;
+        margin-top: 10%;
+    }
+
+    &__col &__redes a i {
+        color: $colorTitulos;
+        margin-top: 2rem;
+        margin-right: 5px;
+        transition: 0.3s ease;
+    }
+
+    &__col &__redes a i:hover {
+        transform: scale(1.5);
+        color: $colorTitulos;
+    }
+
+    &__col &__link a {
+        display: block;
+        text-decoration: none;
+        color: $colorFondo;
+        margin-bottom: 5px;
+        position: relative;
+        transition: 0.3s ease;
+    }
+
+    &__col &__link a:before {
+        content: '';
+        height: 12px;
+        width: 3x;
+        position: absolute;
+        top: 5px;
+        left: -10px;
+        background-color: $colorTitulos;
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+    
+    &__col &__link a:hover::after {
+        opacity: 1;
+    }
+    
+    &__col &__link a:hover {
+        transform: translateX(-8px);
+        color: $colorTitulos;
+    }
+    
+    &__col &__datoscontacto {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    
+    &__col &__datoscontacto i {
+        margin-right: 15px;
+    }
+    
+    &__row &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0 1rem 0;
+    }
+    
+    &__row &__form input {
+        background-color: $colorFondo;
+        border: 0;
+        outline: none;
+        padding: 14px 20px;
+        border-radius: 6px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    &__form button {
+        padding: 14px 20px;
+        border: 0;
+        border-radius: 6px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        background-color: $colorSecundario;
+    }
+}
+
+
+.cuerpo{
+    height: 500px;
+}
