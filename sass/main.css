@@ -1,3 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+}
+body img {
+  max-width: 1200px;
+}
+
 .header {
   background: #F9C645;
   height: 80px;
@@ -37,6 +57,88 @@
 }
 .header #check {
   display: none;
+}
+
+.banner {
+  width: 100%;
+}
+.banner_elementos {
+  background-image: url("../Imagenes/nenes-1.png");
+  display: block;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  z-index: -1;
+  top: 100%;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner_elementos h1 {
+  align-content: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 60px;
+  color: #F8F8F8;
+}
+
+.seccion {
+  position: relative;
+  z-index: 100;
+  display: block;
+  height: 60px;
+  width: 100%;
+  background-color: #6A76E5;
+}
+.seccion h2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #F8F8F8;
+}
+
+.contenido__principal {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto 20px;
+  grid-template-areas: "textoP fotoA";
+}
+.contenido__principal .contenido__textoInicial {
+  grid-area: textoP;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+  gap: 20px;
+}
+.contenido__principal .contenido__textoInicial h3 {
+  font-size: 25px;
+}
+.contenido__principal .contenido__textoInicial p {
+  font-size: 15px;
+  font-weight: normal;
+  width: 100%;
+}
+.contenido__principal .contenido__imgcostado {
+  grid-area: fotoA;
+  height: 400px;
+  display: flex;
+  justify-content: right;
+}
+.contenido__principal .contenido__imgcostado img {
+  height: 100%;
+  width: 400px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: -20px 0px 40px 20px;
+  box-shadow: -8px 9px 20px rgba(0, 0, 0, 0.25);
 }
 
 .footer {
@@ -165,11 +267,10 @@
   background-color: #6A76E5;
 }
 
-.cuerpo {
-  height: 500px;
-}
-
 @media (max-width: 952px) {
+  .header {
+    z-index: 100;
+  }
   .header__enlace {
     padding-left: 20px;
   }
@@ -179,6 +280,31 @@
   .banner h1 {
     font-size: 40px;
     text-align: center;
+  }
+  .contenido__principal {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "textoP" "fotoA";
+  }
+  .contenido__principal .contenido__textoInicial h3 {
+    font-size: 25px;
+  }
+  .contenido__principal .contenido__textoInicial p {
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .contenido__principal .contenido__imgcostado {
+    height: auto;
+    margin: 0%;
+    width: 100%;
+  }
+  .contenido__principal .contenido__imgcostado img {
+    width: 100%;
+    height: 60%;
+    border-radius: 0%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0%;
   }
   .footer__row {
     flex-direction: column;
@@ -190,6 +316,9 @@
   }
 }
 @media (max-width: 746px) {
+  .header {
+    z-index: 100;
+  }
   .header__checkbtn {
     display: block;
   }
@@ -215,7 +344,7 @@
     left: 0;
   }
   .banner h1 {
-    font-size: 15px;
+    font-size: 30px;
     text-align: center;
   }
   .footer__row {
@@ -226,47 +355,4 @@
     text-align: left;
     margin-bottom: 20px;
   }
-}
-.banner {
-  width: 100%;
-}
-.banner_elementos {
-  background-image: url("../Imagenes/nenes-1.png");
-  display: block;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.7;
-  z-index: -1;
-  top: 100%;
-  height: 300px;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.banner_elementos h1 {
-  align-content: center;
-  font-family: "Manrope", sans-serif;
-  font-size: 60px;
-  color: #F8F8F8;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-}
-body img {
-  max-width: 1200px;
 }/*# sourceMappingURL=main.css.map */

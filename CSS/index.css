@@ -448,9 +448,9 @@ img{
 .donaciones-grid-container{
     grid-area:contenido;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 100px 200px 300px;
     grid-template-rows: auto auto;
-    grid-template-areas: "info info"
+    grid-template-areas: "xfo"
                          "foto botonera";
 }
 .info-donaciones{

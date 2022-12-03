@@ -1,31 +1,7 @@
+
+@import 'general';
 @import 'vars';
 @import 'navbar';
+@import 'contenido';
 @import 'footer';
 @import 'media';
-@import 'contenido';
-
-*{
-padding: 0;
-margin: 0;
-text-decoration: none;
-list-style: none;
-box-sizing: border-box;
-}
-
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-
-
-
-    // DESP BORRAR
-    & img{
-        max-width: 1200px;
-    }
-}
-
-
-
