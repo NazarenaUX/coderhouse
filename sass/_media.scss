@@ -9,11 +9,19 @@
         }
     }
 
-    .footer{
-        &__row{
+    .banner {
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+
+    .footer {
+        &__row {
             flex-direction: column;
         }
-        &__col{
+
+        &__col {
             width: 100%;
             text-align: left;
             margin-bottom: 25px;
@@ -53,11 +61,21 @@
         left: 0;
     }
 
-    .footer{
-        &__row{
+    .banner {
+
+        h1 {
+            font-size: 15px;
+            text-align: center;
+
+        }
+    }
+
+    .footer {
+        &__row {
             flex-direction: column;
         }
-        &__col{
+
+        &__col {
             width: 100%;
             text-align: left;
             margin-bottom: 20px;

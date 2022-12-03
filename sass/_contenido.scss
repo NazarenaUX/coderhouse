@@ -1,0 +1,18 @@
+.banner{
+    width: 100%;
+    &_elementos {
+        background-image: url('../Imagenes/nenes-1.png');
+        @include banner-foto;
+        h1{
+            align-content: center;
+            font-family: $fuenteUnica;
+            font-size: 60px;
+            color: $colorFondo;
+        }
+    }
+}
+
+
+
+
+
