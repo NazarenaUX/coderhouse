@@ -218,8 +218,8 @@
                 grid-area: check;
                 margin-left: 5%;
 
-                .option{
-                    input{
+                .option {
+                    input {
                         margin: 10px 15px 10px 10px;
                         height: 20px;
                         width: 20px;
@@ -250,7 +250,8 @@
 
             .boton-enviar {
                 grid-area: boton;
-                button{
+
+                button {
                     @include font-600-20px;
                     width: 100%;
                     height: 100%;
@@ -270,6 +271,94 @@
         iframe {
             flex-grow: 1;
             max-width: 45%;
+        }
+    }
+
+    &__donaciones {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "info info"
+            "aside botonera";
+        row-gap: 20px;
+
+        .info-donaciones {
+            grid-area: info;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-self: center;
+
+            article {
+                border-radius: 10px;
+                @include flex-col;
+                align-items: center;
+                max-width: 650px;
+                border: solid 5px $colorPrincipal;
+
+                &.alt{
+                    border: solid 5px $colorSecundario;
+                }
+
+                p{
+                    margin: 0px 20px;
+                }
+            }
+        }
+
+        .imagen-aside {
+            z-index: 1;
+            grid-area: aside;
+            margin-right: -300px;
+            @include gradient-transparency-right;
+
+
+            img {
+                @include rotate-hor;
+
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .botonera-donar {
+            z-index: 2;
+            grid-area: botonera;
+            padding: 150px 0;
+
+            h4{
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+
+            ul {
+                list-style: none;
+
+                li,button,p{
+                    margin: 20px 0;
+                }
+
+                p{
+                    font-size: 20px;
+                    line-height: 1.6;
+                }
+
+                button {
+                    width: 100%;
+                    height: 60px;
+                    font-size: 20px;
+                    border: none;
+                    @include boton-estilo;
+
+                    &.alt{
+                        background-color: $colorSecundario;
+                    }
+                }
+            }
         }
     }
 }

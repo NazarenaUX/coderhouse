@@ -21,10 +21,10 @@ h3 {
     color: #090c26;
 }
 
-h4 {
+/* h4 {
     font-size: 20px;
     font-weight: 500;
-}
+} */
 
 h5 {
     font-size: 15px;
@@ -110,17 +110,17 @@ body *{
 /* imagen aside */
 
 .col-image-aside{
-    height: 300px;
+    /* height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 .col-image-aside img{
-    height: 100%;
+    /* height: 100%;
     width: 300px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: cover; */
 }
 
 .col-resumen{
@@ -278,44 +278,44 @@ body *{
 }
 
 /* LISTA DE CONTACTOS */
-.contactos {
+/* .contactos {
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 10px;
-}
+} */
 
-.row-footer>.col-icono {
+/* .row-footer>.col-icono {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 
 /* -----------modelo pareaja icono-texto -------- */
 /*  CONTENEDOR DE PAREJA ICONO-TEXTO */
-.contenedor-icono-texto {
+/* .contenedor-icono-texto {
     display: flex;
     flex-direction: column;
-}
+} */
 
 /* MITADES CONTENEDOR DE PAREJA ICONO-TEXTO */
-.contenedor-icono-texto div {
+/* .contenedor-icono-texto div {
     height: 50%;
     display: flex;
     justify-content: center;
     padding: 0px 10%;
-}
+} */
 
 /* IMAGEN DE PAREJA ICONO-TEXTO */
-.contenedor-icono-texto img {
+/* .contenedor-icono-texto img {
     align-self: flex-end;
-}
+} */
 
 /* TEXTO DE PAREJA ICONO-TEXTO */
-.contenedor-icono-texto h6 {
+/* .contenedor-icono-texto h6 {
     text-align: center;
-}
+} */
 
 /* --------Fin modelo pareja----- */
 
@@ -359,45 +359,45 @@ img{
 /* BOTONERA DONAR */
 
 .botonera-donar{
-    grid-area: botonera;
+    /* grid-area: botonera;
     width: 100%;
     margin: 90px 0px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-top: 60px;
+    padding-top: 60px; */
     
 }
 
 .botonera-info{
-    align-self: center;
+    /* align-self: center;
     width: 65%;
-    text-align: center;
+    text-align: center; */
 
 }
-.donaciones-lista{
+/* .donaciones-lista{
     list-style: none;
-}
-.donaciones-lista *{
+} */
+/* .donaciones-lista *{
     margin: 20px 0;
-}
+} */
 
-.donaciones-lista p{
+/* .donaciones-lista p{
     font-size: 20px;
     line-height: 1.6;
-}
+} */
 
-.donaciones-lista button{
+/* .donaciones-lista button{
     width: 100%;
     height: 60px;
     font-size: 20px;
 
     font-weight: 500;
     border: none;
-}
+} */
 
 .donacion-unica .boton-estilo{
-    background-color: #6A76E5;
+    /* background-color: #6A76E5; */
 }
 
   /* @keyframes zoom{
@@ -416,59 +416,59 @@ img{
 
 /* -------------------inicio pagina donaciones----------------- */
 .donaciones-grid-container{
-    grid-area:contenido;
+    /* grid-area:contenido;
     display: grid;
     grid-template-columns: 100px 200px 300px;
     grid-template-rows: auto auto;
     grid-template-areas: "xfo"
-                         "foto botonera";
+                         "foto botonera"; */
 }
 .info-donaciones{
-    grid-area:info;
+    /* grid-area:info;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px; */
 }
 .foto-lateral-elipse{
-    overflow: hidden;
+    /* overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 50%;
-    box-shadow: -8px 9px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: -8px 9px 20px rgba(0, 0, 0, 0.25); */
 
 }
 .foto-lateral-elipse>img{
-    width: 120%;
+    /* width: 120%; */
 
 }
 
 
 .objetivos-donaciones{
-    border-radius: 10px;
+    /* border-radius: 10px;
     display: flex;
     align-items: center;
-    max-width: 650px;
+    max-width: 650px; */
 }
 .objetivos-donaciones.variante-a{
-    border: solid 5px #F9C645;
+    /* border: solid 5px #F9C645; */
 }
 .objetivos-donaciones.variante-b{
-    border: solid 5px #6A76E5;
+    /* border: solid 5px #6A76E5; */
 }
 .objetivos-donaciones *{
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
 }
 
 .row-donaciones{
-    align-items: center;
+    /* align-items: center; */
 }
 
 
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
 
-    /* BANNER */
+
     .row-banner{
         height: auto;
     }
@@ -491,11 +491,11 @@ img{
     }
 
 
-    /* index */
+
 
     .foto-integrante img{
         width: 100%;
         height: 100%;
     }
 
-}
+} */

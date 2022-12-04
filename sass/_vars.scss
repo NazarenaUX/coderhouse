@@ -93,6 +93,24 @@ $profe-nenes-4: url('./../Imagenes/profe-nenes-4.jpg');
     }
 }
 
+
+//mixins para fotos
+
+@mixin rotate-hor{
+    transform: scaleX(-1);
+}
+
+@mixin gradient-transparency-right{
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+@mixin gradient-transparency-botton{
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+
+}
+
 //mixins de flex
 
 @mixin flex-row {

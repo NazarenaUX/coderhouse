@@ -376,6 +376,81 @@ body .contenido__principal, body > section {
   flex-grow: 1;
   max-width: 45%;
 }
+.contenido__donaciones {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto auto;
+  grid-template-areas: "info info" "aside botonera";
+  row-gap: 20px;
+}
+.contenido__donaciones .info-donaciones {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-self: center;
+}
+.contenido__donaciones .info-donaciones article {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 650px;
+  border: solid 5px #F9C645;
+}
+.contenido__donaciones .info-donaciones article.alt {
+  border: solid 5px #6A76E5;
+}
+.contenido__donaciones .info-donaciones article p {
+  margin: 0px 20px;
+}
+.contenido__donaciones .imagen-aside {
+  z-index: 1;
+  grid-area: aside;
+  margin-right: -300px;
+  -webkit-mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+          mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+.contenido__donaciones .imagen-aside img {
+  transform: scaleX(-1);
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contenido__donaciones .botonera-donar {
+  z-index: 2;
+  grid-area: botonera;
+  padding: 150px 0;
+}
+.contenido__donaciones .botonera-donar h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.contenido__donaciones .botonera-donar ul {
+  list-style: none;
+}
+.contenido__donaciones .botonera-donar ul li, .contenido__donaciones .botonera-donar ul button, .contenido__donaciones .botonera-donar ul p {
+  margin: 20px 0;
+}
+.contenido__donaciones .botonera-donar ul p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.contenido__donaciones .botonera-donar ul button {
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  background-color: #F9C645;
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+.contenido__donaciones .botonera-donar ul button.alt {
+  background-color: #6A76E5;
+}
 
 .footer {
   background-color: #F9C645;
@@ -396,6 +471,7 @@ body .contenido__principal, body > section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
 }
 .footer__col {
   color: #F8F8F8;
@@ -610,5 +686,20 @@ body .contenido__principal, body > section {
   .contenido__quiero__sumarme form .datos-personales input {
     height: 60px;
     width: 100%;
+  }
+  .contenido__donaciones {
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "info" "aside" "botonera";
+    row-gap: 20px;
+  }
+  .contenido__donaciones .imagen-aside {
+    margin-right: 0;
+    -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+            mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  }
+  .contenido__donaciones .botonera-donar {
+    padding: 0;
   }
 }/*# sourceMappingURL=main.css.map */
