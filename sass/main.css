@@ -17,6 +17,9 @@ body {
 body img {
   max-width: 1200px;
 }
+body .contenido__principal, body > section {
+  max-width: 1326px;
+}
 
 .header {
   background: #F9C645;
@@ -69,7 +72,6 @@ body img {
   background-position: center;
   opacity: 0.7;
   z-index: -1;
-  top: 100%;
   height: 300px;
   width: 100%;
   position: relative;
@@ -86,16 +88,15 @@ body img {
 
 .seccion {
   position: relative;
-  z-index: 100;
   display: block;
   height: 60px;
   width: 100%;
   background-color: #6A76E5;
 }
 .seccion h2 {
-  width: 100%;
   display: flex;
   align-items: center;
+  width: 100%;
   padding: 20px 10px;
   font-family: "Manrope", sans-serif;
   font-size: 20px;
@@ -129,7 +130,7 @@ body img {
   grid-area: fotoA;
   height: 400px;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
 }
 .contenido__principal .contenido__imgcostado img {
   height: 100%;
@@ -140,7 +141,149 @@ body img {
   margin: -20px 0px 40px 20px;
   box-shadow: -8px 9px 20px rgba(0, 0, 0, 0.25);
 }
-
+.contenido__home {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenido__home .contenido__propuestas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.contenido__home .contenido__propuestas > div {
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  justify-content: center;
+  border: 8px solid #F9C645;
+}
+.contenido__home .contenido__propuestas > div .icono__propuestas {
+  align-self: center;
+  height: 40px;
+}
+.contenido__home .contenido__propuestas > div .icono__propuestas i {
+  scale: 2;
+}
+.contenido__home .contenido__propuestas > div .descripcion__propuestas {
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-size: small;
+}
+.contenido__equipo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 50px 0;
+}
+.contenido__equipo .directivos,
+.contenido__equipo .docentes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.contenido__equipo .directivos .card,
+.contenido__equipo .docentes .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 330px;
+  width: 300px;
+  gap: 30px;
+}
+.contenido__equipo .directivos .card .avatar,
+.contenido__equipo .docentes .card .avatar {
+  background-size: cover;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: -8px 9px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.contenido__equipo .directivos .card .avatar img,
+.contenido__equipo .docentes .card .avatar img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contenido__equipo .directivos .card .avatar:after,
+.contenido__equipo .docentes .card .avatar:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+.contenido__proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.contenido__proyectos ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 50px 0px;
+  row-gap: 30px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.contenido__proyectos .tarjeta__proyecto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+  text-align: center;
+  gap: 20px;
+}
+.contenido__proyectos .tarjeta__proyecto div {
+  background-size: cover;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: -8px 9px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.contenido__proyectos .tarjeta__proyecto div img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contenido__proyectos .tarjeta__proyecto div:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+.contenido__proyectos .tarjeta__proyecto div.imagen-1 {
+  background-image: url("./../Imagenes/nenes-5.JPG");
+}
+.contenido__proyectos .tarjeta__proyecto div.imagen-2 {
+  background-image: url("./../Imagenes/profe-nenes-2.jpg");
+}
+.contenido__proyectos .tarjeta__proyecto div.imagen-3 {
+  background-image: url("./../Imagenes/profe-nenes-4.jpg");
+}
+.contenido__proyectos .tarjeta__proyecto div.mas-info {
+  display: flex;
+  align-items: center;
+  background-color: #6A76E5;
+  padding: 10%;
+}
+.contenido__proyectos .tarjeta__proyecto div.mas-info p {
+  color: #F8F8F8;
+}
+.contenido__proyectos .tarjeta__proyecto button {
+  width: 80%;
+  height: 35px;
+  background-color: #F9C645;
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+}
 .footer {
   background-color: #F9C645;
   position: relative;
@@ -318,6 +461,8 @@ body img {
 @media (max-width: 746px) {
   .header {
     z-index: 100;
+    top: 0;
+    position: fixed;
   }
   .header__checkbtn {
     display: block;
@@ -354,5 +499,8 @@ body img {
     width: 100%;
     text-align: left;
     margin-bottom: 20px;
+  }
+  .contenido__home {
+    color: black;
   }
 }/*# sourceMappingURL=main.css.map */

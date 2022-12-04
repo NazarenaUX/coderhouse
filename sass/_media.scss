@@ -71,6 +71,8 @@
 @media (max-width: $mobile) {
     .header {
         z-index: 100;
+        top: 0;
+        position: fixed;
 
         &__checkbtn {
             display: block;
@@ -120,6 +122,18 @@
             width: 100%;
             text-align: left;
             margin-bottom: 20px;
+        }
+    }
+
+    .contenido{
+        &__proyectos{
+                & .tarjeta__proyecto {
+                   
+                }
+        }
+
+        &__home{
+            color: black;
         }
     }
 }

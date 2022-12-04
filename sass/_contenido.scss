@@ -1,3 +1,5 @@
+//General
+
 .banner {
     width: 100%;
 
@@ -16,7 +18,6 @@
 
 .seccion {
     position: relative;
-    z-index: 100;
     display: block;
     height: 60px;
     width: 100%;
@@ -24,9 +25,8 @@
 
 
     h2 {
+        @include flex-row-aic;
         width: 100%;
-        display: flex;
-        align-items: center;
         padding: 20px 10px;
         font-family: $fuenteUnica;
         font-size: 20px;
@@ -35,46 +35,155 @@
     }
 }
 
-.contenido__principal {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: auto 20px;
-    grid-template-areas:
-        "textoP fotoA";
+//contenidos de diferentes paginas
+.contenido {
+    &__principal {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: auto 20px;
+        grid-template-areas:
+            "textoP fotoA";
 
 
-    & .contenido__textoInicial {
-        grid-area: textoP;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 50px;
-        gap: 20px;
+        & .contenido__textoInicial {
+            grid-area: textoP;
+            @include flex-col-jcc;
+            margin: 50px;
+            gap: 20px;
 
-        h3 {
-            font-size: 25px;
+            h3 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: normal;
+                width: 100%;
+            }
         }
 
-        p {
-            font-size: 15px;
-            font-weight: normal;
-            width: 100%;
+        & .contenido__imgcostado {
+            grid-area: fotoA;
+            height: 400px;
+            @include flex-row-jcfe;
+
+            img {
+                height: 100%;
+                width: 400px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin: -20px 0px 40px 20px;
+                box-shadow: -8px 9px 20px rgba(0, 0, 0, 0.25);
+            }
         }
     }
 
-    & .contenido__imgcostado {
-        grid-area: fotoA;
-        height: 400px;
-        display: flex;
-        justify-content: right;
+    &__home {
+        @include flex-row-wrap;
 
-        img {
-            height: 100%;
-            width: 400px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: -20px 0px 40px 20px;
-            box-shadow: -8px 9px 20px rgba(0, 0, 0, 0.25);
+        .contenido__propuestas {
+            @include flex-row-jcc-wrap;
+            gap: 50px;
+
+            &>div {
+                @include circulo-propuestas;
+                border: 8px solid $colorPrincipal;
+
+                .icono__propuestas {
+                    @include icono-prop;
+
+                    & i {
+                        scale: (2)
+                    }
+                }
+
+                .descripcion__propuestas {
+                    @include desc-prop;
+                }
+            }
+
         }
+    }
+
+    &__equipo {
+        @include flex-col-aic;
+        gap: 30px;
+        margin: 50px 0;
+
+        .directivos,
+        .docentes {
+            @include flex-row-jcsa-wrap;
+            gap: 100px;
+
+            .card {
+                @include flex-col-aic-jcc;
+                height: 330px;
+                width: 300px;
+                gap: 30px;
+
+                .avatar {
+                    @include circulo-responsivo;
+                }
+            }
+        }
+    }
+
+    &__proyectos {
+        @include flex-col-aic-jcsb;
+
+        ul {
+            @include flex-row-jcse-wrap;
+            margin: 50px 0px;
+            row-gap: 30px;
+            column-gap: 50px;
+        }
+
+        .tarjeta__proyecto {
+            @include flex-col-aic-jcsb;
+            max-width: 300px;
+            text-align: center;
+            gap: 20px;
+
+            div {
+                @include circulo-responsivo;
+
+                &.imagen-1 {
+                    background-image: $nenes-5;
+                }
+
+                &.imagen-2 {
+                    background-image: $profe-nenes-2;
+                }
+
+                &.imagen-3 {
+                    background-image: $profe-nenes-4;
+                }
+
+                &.mas-info {
+                    @include flex-row-aic;
+                    background-color: $colorSecundario;
+                    padding: 10%;
+
+                    p {
+                        color: $colorFondo;
+                    }
+                }
+            }
+
+
+            button {
+                width: 80%;
+                height: 35px;
+                @include boton-estilo
+            }
+        }
+    }
+
+    &__quiero__sumarme{
+
+    }
+
+    &__donde__estamos{
+
     }
 }

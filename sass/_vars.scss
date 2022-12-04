@@ -13,6 +13,11 @@ $fuenteUnica: 'Manrope', sans-serif;
 $mobile: 746px;
 $tablet: 952px;
 
+//fotos
+$nenes-5: url('./../Imagenes/nenes-5.JPG');
+
+$profe-nenes-2: url('./../Imagenes/profe-nenes-2.jpg');
+$profe-nenes-4: url('./../Imagenes/profe-nenes-4.jpg');
 //Mixin
 
 @mixin banner-foto{
@@ -21,7 +26,7 @@ $tablet: 952px;
     background-position: center;
     opacity: .7;
     z-index: -1;
-    top: 100%;
+    // top: 100%;
     height: 300px;
     width: 100%;
     position: relative;
@@ -30,7 +35,153 @@ $tablet: 952px;
     justify-content: center;
 }
 
+@mixin circulo-propuestas {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+@mixin icono-prop {
+    align-self: center;
+    height: 40px;
+}
+
+@mixin desc-prop {
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+}
+
+@mixin boton-estilo{
+    background-color: #F9C645;
+    border-radius: 7px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+@mixin circulo-responsivo{
+    background-size: cover;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: -8px 9px 20px rgb(0 0 0 / 25%);
+    overflow: hidden;
+
+    & img{
+        height: 100%;
+        object-fit: cover;
+    }
 
 
+    &:after{
+        content: "";
+        padding-bottom: 100%;
+        display: block;
+    }
+}
 
+//mixins de flex
+
+@mixin flex-row {
+    display:flex;
+}
+
+@mixin flex-col {
+    display:flex;
+    flex-direction: column;
+}
+@mixin flex-wrap {
+    flex-wrap: wrap;
+}
+
+//justify content
+@mixin flex-jcc{
+    justify-content: center;
+}
+
+@mixin flex-jcfe{
+    justify-content: flex-end;
+}
+
+@mixin flex-jcsb{
+    justify-content: space-between;
+}
+
+@mixin flex-jcse{
+    justify-content: space-evenly;
+}
+
+@mixin flex-jcsa{
+    justify-content: space-around;
+}
+
+//align items
+
+@mixin flex-aic{
+    align-items: center;
+}
+
+//flex columnas
+
+@mixin flex-col-aic{
+    @include flex-col;
+    @include flex-aic;
+}
+@mixin flex-col-aic-jcc{
+    @include flex-col;
+    @include flex-aic;
+    @include flex-jcc;
+}
+@mixin flex-col-aic-jcsb{
+    @include flex-col;
+    @include flex-aic;
+    @include flex-jcsb;
+}
+
+@mixin flex-col-aic-jcfe{
+    @include flex-col;
+    @include flex-aic;
+    @include flex-jcfe;
+}
+
+@mixin flex-col-jcc{
+    @include flex-col;
+    @include flex-jcc;
+}
+//flex filas
+@mixin flex-row-aic{
+    @include flex-row;
+    @include flex-aic;
+}
+
+@mixin flex-row-wrap{
+    @include flex-row;
+    @include flex-wrap;
+}
+
+@mixin flex-row-jcc-wrap{
+    @include flex-row;
+    @include flex-jcc;
+    @include flex-wrap;
+}
+
+@mixin flex-row-jcse-wrap{
+    @include flex-row;
+    @include flex-jcse;
+    @include flex-wrap;
+}
+
+@mixin flex-row-jcsa-wrap{
+    @include flex-row;
+    @include flex-jcsa;
+    @include flex-wrap;
+}
+
+@mixin flex-row-jcfe{
+    @include flex-row;
+    @include flex-jcfe;
+}
 

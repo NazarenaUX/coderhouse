@@ -15,10 +15,12 @@
         min-height: 100vh;
         font-family: $fuenteUnica;
     
-    
-    
         // DESP BORRAR
         & img{
             max-width: 1200px;
+        }
+
+        .contenido__principal, &>section{
+            max-width: 1326px;
         }
     }
