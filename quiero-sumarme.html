@@ -64,6 +64,58 @@
     </main>
 
     <section class="contenido__quiero__sumarme">
+        <h2>Contanos sobre vos</h2>
+        <form class="formulario-cv" action="recibir-cv">
+            <div class="datos-personales">
+                <input type="text" name="nombre" class="nombre" placeholder="Nombre completo" required>
+                <input type="number" name="dni" class="dni" placeholder="DNI" required>
+                <input type="tel" name="telefono" class="telefono" placeholder="Telefono" required>
+                <input type="email" name="mail" class="mail" placeholder="Mail" required>
+            </div>
+
+            <div class="tit-check">
+                <div class="section-header">
+                    <p>Quiero colaborar en:</p>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="docencia" class="docencia">
+                    <label for="docencia">Docencia</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="talleres" class="talleres">
+                    <label for="talleres">Talleres</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="difusion" class="difusion">
+                    <label for="difusion">Difusion</label>
+                </div>
+
+            </div>
+
+            <div class="agregar-archivo">
+
+                <p>Compartinos tu CV y/o propuesta de taller: </p>
+                
+                <input type="file" name="boton-archivo" class="boton-archivo" hidden/>
+                <label  class="label-archivo" for="boton-archivo">
+                    <div class="label-archivo-contenido boton-estilo">
+                        <h4>Subir archivo</h4>
+                        <img src="./Imagenes/icon-descargar.png" alt="subir archivo">
+                    </div>
+                </label>
+
+            </div>
+
+            <div class="form-info">
+
+                <p>En breve nos vamos a comunicar con vos para brindarte una respuesta.</p>
+            </div>
+
+            <div class="boton-enviar">
+                <button class="boton-estilo submit" type="submit " >Enviar</button>
+            </div>
+            
+        </form>
     </section>
 
     <footer class="footer">
