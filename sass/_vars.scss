@@ -8,6 +8,12 @@ $colorTexto: #000000;
 //Tipografia
 $fuenteUnica: 'Manrope', sans-serif;
 
+@mixin font-600-20px{
+    font-weight: 600;
+    font-family: $fuenteUnica;
+    font-size: 20px;
+}
+
 
 //Responsive
 $mobile: 746px;
@@ -20,7 +26,7 @@ $profe-nenes-2: url('./../Imagenes/profe-nenes-2.jpg');
 $profe-nenes-4: url('./../Imagenes/profe-nenes-4.jpg');
 //Mixin
 
-@mixin banner-foto{
+@mixin banner-foto {
     display: block;
     background-size: cover;
     background-position: center;
@@ -56,27 +62,31 @@ $profe-nenes-4: url('./../Imagenes/profe-nenes-4.jpg');
     font-size: small;
 }
 
-@mixin boton-estilo{
-    background-color: #F9C645;
+@mixin radius-shadow {
     border-radius: 7px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@mixin boton-estilo {
+    background-color: #F9C645;
+    @include radius-shadow;
     border: none;
 }
 
-@mixin circulo-responsivo{
+@mixin circulo-responsivo {
     background-size: cover;
     width: 100%;
     border-radius: 50%;
     box-shadow: -8px 9px 20px rgb(0 0 0 / 25%);
     overflow: hidden;
 
-    & img{
+    & img {
         height: 100%;
         object-fit: cover;
     }
 
 
-    &:after{
+    &:after {
         content: "";
         padding-bottom: 100%;
         display: block;
@@ -86,107 +96,127 @@ $profe-nenes-4: url('./../Imagenes/profe-nenes-4.jpg');
 //mixins de flex
 
 @mixin flex-row {
-    display:flex;
+    display: flex;
 }
 
 @mixin flex-col {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
+
 @mixin flex-wrap {
     flex-wrap: wrap;
 }
 
 //justify content
-@mixin flex-jcc{
+@mixin flex-jcc {
     justify-content: center;
 }
 
-@mixin flex-jcfe{
+@mixin flex-jcfe {
     justify-content: flex-end;
 }
 
-@mixin flex-jcsb{
+@mixin flex-jcsb {
     justify-content: space-between;
 }
 
-@mixin flex-jcse{
+@mixin flex-jcse {
     justify-content: space-evenly;
 }
 
-@mixin flex-jcsa{
+@mixin flex-jcsa {
     justify-content: space-around;
 }
 
 //align items
 
-@mixin flex-aic{
+@mixin flex-aic {
     align-items: center;
 }
 
 //flex columnas
 
-@mixin flex-col-aic{
+@mixin flex-col-aic {
     @include flex-col;
     @include flex-aic;
 }
-@mixin flex-col-aic-jcc{
+
+@mixin flex-col-aic-jcc {
     @include flex-col;
     @include flex-aic;
     @include flex-jcc;
 }
-@mixin flex-col-aic-jcsb{
+
+@mixin flex-col-aic-jcsb {
     @include flex-col;
     @include flex-aic;
     @include flex-jcsb;
 }
 
-@mixin flex-col-aic-jcfe{
+@mixin flex-col-aic-jcfe {
     @include flex-col;
     @include flex-aic;
     @include flex-jcfe;
 }
 
-@mixin flex-col-jcc{
+@mixin flex-col-jcc {
     @include flex-col;
     @include flex-jcc;
 }
+
+@mixin flex-col-wrap {
+    @include flex-col;
+    @include flex-wrap;
+}
+
 //flex filas
-@mixin flex-row-aic{
+
+@mixin flex-row-aic-jcc {
+    @include flex-row;
+    @include flex-aic;
+    @include flex-jcc;
+}
+
+@mixin flex-row-aic {
     @include flex-row;
     @include flex-aic;
 }
 
-@mixin flex-row-wrap{
+@mixin flex-row-wrap {
     @include flex-row;
     @include flex-wrap;
 }
 
-@mixin flex-row-jcc-wrap{
+@mixin flex-row-jcc {
+    @include flex-row;
+    @include flex-jcc;
+}
+
+@mixin flex-row-jcc-wrap {
     @include flex-row;
     @include flex-jcc;
     @include flex-wrap;
 }
 
-@mixin flex-row-jcse-wrap{
+@mixin flex-row-jcse-wrap {
     @include flex-row;
     @include flex-jcse;
     @include flex-wrap;
 }
 
-@mixin flex-row-jcse{
+@mixin flex-row-jcse {
     @include flex-row;
     @include flex-jcse;
 }
 
-@mixin flex-row-jcsa-wrap{
+@mixin flex-row-jcsa-wrap {
     @include flex-row;
     @include flex-jcsa;
     @include flex-wrap;
 }
 
-@mixin flex-row-jcfe{
+@mixin flex-row-jcfe {
     @include flex-row;
     @include flex-jcfe;
 }
-

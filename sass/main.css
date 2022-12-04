@@ -284,6 +284,87 @@ body .contenido__principal, body > section {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
 }
+.contenido__quiero__sumarme {
+  background-color: #6A76E5;
+  margin-bottom: 50px;
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 25px;
+}
+.contenido__quiero__sumarme form {
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1.2fr 1fr 0.5fr;
+  grid-template-areas: "datospers datospers datospers datospers" "check     check     archivo   archivo  " "info      info      .         boton";
+  gap: 30px;
+}
+.contenido__quiero__sumarme form .datos-personales {
+  grid-area: datospers;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.contenido__quiero__sumarme form .datos-personales input {
+  width: 47%;
+  background: #FBFBFB;
+  font-size: 20px;
+  padding-left: 30px;
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contenido__quiero__sumarme form .tit-check {
+  grid-area: check;
+  margin-left: 5%;
+}
+.contenido__quiero__sumarme form .tit-check .option input {
+  margin: 10px 15px 10px 10px;
+  height: 20px;
+  width: 20px;
+}
+.contenido__quiero__sumarme form .agregar-archivo {
+  grid-area: archivo;
+}
+.contenido__quiero__sumarme form .agregar-archivo p {
+  margin: 10px 0;
+}
+.contenido__quiero__sumarme form .agregar-archivo label {
+  width: 100%;
+}
+.contenido__quiero__sumarme form .agregar-archivo label div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9C645;
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+.contenido__quiero__sumarme form .form-info {
+  grid-area: info;
+}
+.contenido__quiero__sumarme form .boton-enviar {
+  grid-area: boton;
+}
+.contenido__quiero__sumarme form .boton-enviar button {
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #F9C645;
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+}
 .contenido__donde__estamos {
   display: flex;
   justify-content: space-evenly;
@@ -520,5 +601,14 @@ body .contenido__principal, body > section {
     flex-grow: 0;
     width: 100%;
     max-width: 100%;
+  }
+  .contenido__quiero__sumarme form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 0.5fr 0.5fr;
+    grid-template-areas: "datospers" "check" "archivo" "info" "boton";
+  }
+  .contenido__quiero__sumarme form .datos-personales input {
+    height: 60px;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
