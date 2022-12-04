@@ -118,9 +118,6 @@ body .contenido__principal, body > section {
   margin: 50px;
   gap: 20px;
 }
-.contenido__principal .contenido__textoInicial h3 {
-  font-size: 25px;
-}
 .contenido__principal .contenido__textoInicial p {
   font-size: 15px;
   font-weight: normal;
@@ -398,12 +395,16 @@ body .contenido__principal, body > section {
   align-items: center;
   max-width: 650px;
   border: solid 5px #F9C645;
+  gap: 15px;
+  padding-bottom: 10px;
 }
 .contenido__donaciones .info-donaciones article.alt {
   border: solid 5px #6A76E5;
 }
 .contenido__donaciones .info-donaciones article p {
   margin: 0px 20px;
+  font-size: 20px;
+  font-weight: bold;
 }
 .contenido__donaciones .imagen-aside {
   z-index: 1;
@@ -471,7 +472,7 @@ body .contenido__principal, body > section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
 }
 .footer__col {
   color: #F8F8F8;

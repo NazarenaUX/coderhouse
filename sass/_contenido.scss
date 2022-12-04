@@ -51,9 +51,6 @@
             margin: 50px;
             gap: 20px;
 
-            h3 {
-                font-size: 25px;
-            }
 
             p {
                 font-size: 15px;
@@ -297,6 +294,8 @@
                 align-items: center;
                 max-width: 650px;
                 border: solid 5px $colorPrincipal;
+                gap: 15px;
+                padding-bottom: 10px;
 
                 &.alt{
                     border: solid 5px $colorSecundario;
@@ -304,6 +303,8 @@
 
                 p{
                     margin: 0px 20px;
+                    font-size: 20px;
+                    font-weight: bold;
                 }
             }
         }
